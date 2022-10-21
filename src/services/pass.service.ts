@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable, of} from "rxjs";
+import { HttpClient } from "@angular/common/http";
+import { Observable, of } from "rxjs";
 import { Pass } from '../models/pass';
 
 
@@ -8,7 +8,7 @@ import { Pass } from '../models/pass';
   providedIn: 'root'
 })
 export class PassService {
-  readonly baseURL = 'http://localhost:3000/';
+  readonly baseURL = 'https://mc-backend-video.onrender.com/';
 
   constructor(private httpClient: HttpClient) {
   }
